@@ -1,0 +1,93 @@
+body {
+    background-image: url('../img/frontend/bg.jpg');
+}
+.content-head {
+    max-height: 350px;
+    height: 350px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding: 1%;
+    
+}
+
+.content-foot {
+    max-height: 200px;
+    height: 200px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding: 1%;
+    
+}
+
+.text-card {
+    height: 50px;
+    max-height: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    background-color: antiquewhite;
+}
+
+.step-1 {
+    background-image: url('../img/frontend/1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.step-2 {
+    background-image: url('../img/frontend/2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.step-3 {
+    background-image: url('../img/frontend/3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.step-4 {
+    background-image: url('../img/frontend/vot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.card-pasangan {
+    height: 400px;
+    max-width: 400px;
+    margin:5%;
+}
+
+.img-cards{
+    height: 300px;
+    max-width: 300px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card-user {
+    height: 400px;
+    max-height: 400px;
+    margin:2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

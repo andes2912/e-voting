@@ -2,21 +2,27 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.welcome');
 });
 
 Auth::routes();
+
+// BACKEND
+    // CALON
+    Route::resource('calon','backend\calonController');
+    // PASANGAN
+    Route::resource('pasangan','backend\pasanganController');
+    Route::get('select-ketua','backend\pasanganController@select_ketua');
+    Route::get('select-wakil','backend\pasanganController@select_wakil');
+    Route::get('getcalonId/{id}','backend\pasanganController@get_calon_by_id');
+    Route::get('visi-store','backend\pasanganController@visi_store');
+    // PEMILIH
+    Route::get('pemilih-aktif','backend\pemilihController@pemilih');
+
+// FRONTEND
+    // Pasangan
+    Route::get('voting','frontend\pasanganController@pasangan');
+    Route::get('proses-voting','frontend\pasanganController@voting');
 
 Route::get('/home', 'HomeController@index')->name('home');
