@@ -50,7 +50,7 @@
 </div>
 <div class="row">
     @foreach ($vot as $item)
-    <div class="col-lg-3 col-sm-6 col-12">
+    <div class="col-lg-4 col-sm-6 col-12">
         <div class="card">
                 <div class="card-header d-flex align-items-start pb-0">
                     <div>

@@ -16,12 +16,13 @@ class pasanganController extends Controller
         if (auth::check()) {
             if (auth::user()->role == "User") {
                 $cek = voting::where('user_id',auth::user()->id)->first();
+                $ceks = pasangan::where('status','Aktif')->first();
                 $pasangan = pasangan::where('status','Aktif')->get();
                 
                 if (@$cek->user_id == auth::user()->id) {
                     return redirect('home');
                 } else {
-                    return view('user.pasangan.index', compact('pasangan'));
+                    return view('user.pasangan.index', compact('pasangan','ceks'));
                 }
             }
         }

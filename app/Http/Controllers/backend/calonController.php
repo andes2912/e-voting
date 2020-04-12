@@ -15,12 +15,11 @@ class calonController extends Controller
     {
         if (auth::check()) {
             if (auth::user()->role == "Admin") {
-                $calon = calon::where('status','Aktif')->get();
+                $calon = calon::where('status','Belum Aktif')->get();
                 return view('backend.calon.index', compact('calon'));
             }
         }
     }
-
     
     public function create()
     {
