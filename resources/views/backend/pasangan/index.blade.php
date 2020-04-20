@@ -6,7 +6,7 @@
         <div class="col-xl-4 col-md-6 col-sm-12">
             <div class="card">
                 <div class="card-content">
-                    <img class="card-img-top img-fluid" src="{{asset('backend/images/pages/content-img-1.jpg')}}" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="{{asset('frontend/img/pasangan/pasangan-1.jpg')}}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="text-center">{{$item->ketua_nama}} & {{$item->wakil_nama}}</h5>
                         
